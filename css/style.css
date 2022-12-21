@@ -137,8 +137,8 @@ ul {
 
 li {
 	margin: 20px;
-	display: inline-block;
 	list-style: none;
+	float: right;
 }
 
 li a {
