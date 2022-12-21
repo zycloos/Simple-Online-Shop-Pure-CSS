@@ -1,6 +1,6 @@
 # Simple-Online-Shop
 
-A simple Online Shop (T-Shirt)
+A simple Online Shop (T-Shirts)
 
 
 Fonts:
