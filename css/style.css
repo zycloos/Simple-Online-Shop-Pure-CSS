@@ -1,0 +1,247 @@
+* {
+	font-family: Open Sans;
+
+}
+
+body {
+	margin: 0px;
+	display: grid;
+	height: 100vh;
+	background-color: white;
+	grid-template-rows: 100px 1fr 150px;
+	transition: grid-template-rows 1s;
+}
+.header-menu {
+	display: grid;
+	grid-template-columns: 100px 100px 1fr 500px 1fr 100px 100px;
+	background-color: rgb(230, 230, 230);
+	position: sticky;
+	top: 0;
+	user-select: none;
+}
+.menu-picture {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+#logo {
+	border-radius: 50px;
+}
+.menu-text {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#shopy-text {
+	font-size: 41px;
+	font-family: "Sofia", sans-serif;
+	font-weight: bold;
+	margin: 0px;
+	transition: font-size 0.5s;
+	text-shadow: 2px -2px 5px #838383;
+}
+.menu-cart {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+.article-content {
+	display: grid;
+	grid-template-rows: 200px 1fr;
+}
+.content-search {
+	display: grid;
+	grid-template-columns: 1fr 500px 1fr;
+	user-select: none;
+}
+.search {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.search-bar {
+	position: sticky;
+	top: 25px;
+	width: 440px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+	border-radius: 100px;
+	border: 2px solid black;
+	box-shadow: 10px 10px 0px #000000;
+	transition: width 1s;
+}
+#search-img {
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	transition: width 1s, height 1s;
+}
+#search-text {
+	width: 350px;
+	height: 40px;
+	border: 0px;
+	outline: none;
+	font-size: 25px;
+	background-color: transparent;
+	transition: width 1s, font-size 1s, height 0.5s;
+}
+.content-items {
+	display: block;
+	text-align: center;
+}
+.preview {
+	display: inline-block;
+	width: 450px;
+	height: 450px;
+	background-color: white;
+	border: 2px solid black;
+	margin: 20px;
+	box-shadow: 10px 10px 0px #000000;
+	cursor: pointer;
+	transition: width 1s, height 1s;
+}
+.preview-layout {
+	display: grid;
+	grid-template-rows: 300px 100px;
+	transition: grid-template-rows 1s;
+}
+.preview-picture {
+	margin: auto;
+}
+#preview-img {
+	width: 250px;
+	height: 250px;
+	transition: width 1s, height 1s;
+}
+#preview-text {
+	font-size: 20px;
+	font-weight: bold;
+	transition: font-size 1s;
+}
+
+.footer-menu {
+	display: grid;
+	grid-template-columns: 250px 1fr 1fr;
+	background-color: rgb(230, 230, 230);
+	user-select: none;
+	text-align: center;
+	align-items: center;
+}
+ul {
+	padding: 0px;
+}
+
+li {
+	margin: 20px;
+	display: inline-block;
+	list-style: none;
+}
+
+li a {
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+.next-container{
+	margin: 20px;
+}
+#next-button{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+@media screen and (max-width: 1130px) {
+
+	.preview {
+		width: 300px;
+		height: 300px;
+		transition: width 1s, height 1s;
+	}
+
+	#preview-img {
+		width: 150px;
+		height: 150px;
+		transition: width 1s, height 1s;
+	}
+
+	#preview-text {
+		font-size: 14px;
+		font-weight: bold;
+		transition: font-size 1s;
+	}
+
+	.preview-layout {
+		display: grid;
+		grid-template-rows: 200px 100px;
+		transition: grid-template-rows 1s;
+	}
+
+	.header-menu {
+		grid-template-columns: 100px 100px 1fr 100px 1fr 100px 100px;
+	}
+
+	body {
+		grid-template-rows: 100px 1fr 420px;
+		transition: grid-template-rows 1s;
+	}
+
+	.search-bar {
+		width: 300px;
+		transition: width 1s;
+	}
+
+	#search-text {
+		width: 280px;
+		height: 30px;
+		border: 0px;
+		outline: none;
+		font-size: 18px;
+		background-color: transparent;
+		transition: width 1s, font-size 1s height 1s;
+	}
+
+	#search-img {
+		width: 30px;
+		height: 30px;
+		cursor: pointer;
+		transition: width 1s, height 1s;
+	}
+
+	#shopy-text {
+		font-size: 36px;
+		transition: font-size 0.5s;
+	}
+}
+
+@media screen and (max-width: 725px) {
+	.search-bar {
+		width: 200px;
+		transition: width 1s;
+	}
+
+	#search-text {
+		width: 180px;
+		height: 25px;
+		border: 0px;
+		outline: none;
+		font-size: 13px;
+		background-color: transparent;
+		transition: width 1s, font-size 1s height 1s;
+	}
+
+	#search-img {
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		transition: width 1s, height 1s;
+	}
+
+	#shopy-text {
+		font-size: 28px;
+		transition: font-size 0.5s;
+	}
+}
